@@ -1,0 +1,10 @@
+{
+  "name": "LALRLexer",
+  "vendor": "CodingLiki",
+  "description": "Лексер, разбирающий строку на лексемы (Токены) согласно списку типов токенов из файла",
+  "repo_url": "",
+  "depends_on": [
+    "CodingLiki\/OoAutoloader",
+    "CodingLiki\/GrammarParser"
+  ]
+}
