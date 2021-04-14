@@ -3,6 +3,7 @@
   "vendor": "CodingLiki",
   "description": "Лексер, разбирающий строку на лексемы (Токены) согласно списку типов токенов из файла",
   "repo_url": "",
+  "version": "0.1",
   "depends_on": [
     "CodingLiki\/OoAutoloader",
     "CodingLiki\/GrammarParser"
