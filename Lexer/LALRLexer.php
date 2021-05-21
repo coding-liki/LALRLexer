@@ -34,7 +34,6 @@ class LALRLexer
             }
         }
 
-        $tokens[] = new Token('EOF', '');
         return $tokens;
     }
 

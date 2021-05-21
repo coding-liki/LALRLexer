@@ -32,7 +32,6 @@ class LALRLexerTest extends Unit
                 '',
                 '',
                 [
-                    new Token('EOF', ''),
                 ]
             ],
             '1 tokenType' => [
@@ -44,7 +43,6 @@ class LALRLexerTest extends Unit
                     new Token('a', 'a'),
                     new Token('a', 'a'),
                     new Token('a', 'a'),
-                    new Token('EOF', ''),
                 ],
             ],
             '2 tokenType' => [
@@ -58,7 +56,6 @@ class LALRLexerTest extends Unit
                     new Token('A', 'a'),
                     new Token('B', 'b'),
                     new Token('A', 'a'),
-                    new Token('EOF', ''),
                 ]
             ],
             '1 regex' => [
@@ -70,7 +67,6 @@ class LALRLexerTest extends Unit
                     new Token('A', 'a'),
                     new Token('A', 'b'),
                     new Token('A', 'c'),
-                    new Token('EOF', ''),
                 ]
             ],
             '3 regex' => [
@@ -84,7 +80,6 @@ class LALRLexerTest extends Unit
                     new Token('NUM', '123'),
                     new Token('WS_STRING', ' '),
                     new Token('ID', 'hello'),
-                    new Token('EOF', ''),
                 ]
             ]
         ];
