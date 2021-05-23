@@ -32,7 +32,7 @@ class LALRLexer
                 $position += $valueLength;
                 $tokens[] = $nextToken;
             } else {
-                $tokens[] = new Token('ERROR_TOKEN', "bad symbol $src[$position] at position = $position");
+                $tokens[] = new Token('ERROR_TOKEN', "bad symbol $src[0] at position = $position");
                 break;
             }
         }
