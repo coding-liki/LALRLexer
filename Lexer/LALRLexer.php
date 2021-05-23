@@ -12,7 +12,7 @@ class LALRLexer
      * LALRLexer constructor.
      * @param TokenType[] $tokenTypes
      */
-    public function __construct(private array $tokenTypes)
+    public function __construct(private array $tokenTypes, private array $exceptList = [])
     {
     }
 
@@ -26,10 +26,15 @@ class LALRLexer
         $position = 0;
         while(!empty($src)){
             $nextToken = $this->parseNextToken($src);
+
             if($nextToken !== null) {
+
                 $valueLength = strlen($nextToken->getValue());
                 $src = substr($src, $valueLength);
                 $position += $valueLength;
+                if(in_array($nextToken->getType(), $this->exceptList, true)){
+                    continue;
+                }
                 $tokens[] = $nextToken;
             } else {
                 $tokens[] = new Token('ERROR_TOKEN', "bad symbol $src[0] at position = $position");
